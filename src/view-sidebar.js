@@ -636,14 +636,14 @@ sidebar.ModelSidebar = class {
             }
 
             if (graph.inputs.length > 0) {
-                this.addHeader('Inputs');
+                this.addHeader('输入');
                 graph.inputs.forEach((input) => {
                     this.addArgument(input.name, input);
                 });
             }
 
             if (graph.outputs.length > 0) {
-                this.addHeader('Outputs');
+                this.addHeader('输出');
                 graph.outputs.forEach((output) => {
                     this.addArgument(output.name, output);
                 });

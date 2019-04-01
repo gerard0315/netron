@@ -120,7 +120,7 @@ sidebar.NodeSidebar = class {
 
         var attributes = node.attributes;
         if (attributes && attributes.length > 0) {
-            this.addHeader('Attributes');
+            this.addHeader('参数');
             attributes.forEach((attribute) => {
                 this.addAttribute(attribute.name, attribute);
             });
@@ -128,7 +128,7 @@ sidebar.NodeSidebar = class {
 
         var inputs = node.inputs;
         if (inputs && inputs.length > 0) {
-            this.addHeader('Inputs');
+            this.addHeader('输入');
             inputs.forEach((input) => {
                 this.addInput(input.name, input);
             });
@@ -136,7 +136,7 @@ sidebar.NodeSidebar = class {
 
         var outputs = node.outputs;
         if (outputs && outputs.length > 0) {
-            this.addHeader('Outputs');
+            this.addHeader('输出');
             outputs.forEach((output) => {
                 this.addOutput(output.name, output);
             });
@@ -604,7 +604,7 @@ sidebar.ModelSidebar = class {
             var graphTitleElement = document.createElement('div');
             graphTitleElement.className = 'sidebar-view-title';
             graphTitleElement.style.marginTop = '16px';
-            graphTitleElement.innerText = 'Graph';
+            graphTitleElement.innerText = '图';
             if (graphs.length > 1) {
                 graphTitleElement.innerText += " " + name;
                 graphTitleElement.innerText += ' ';
